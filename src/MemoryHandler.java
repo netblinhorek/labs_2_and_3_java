@@ -24,7 +24,7 @@ public class MemoryHandler implements Handler {
                 break;
             case "mv":
                 cpu.set_register(operands[0], cpu.get_register_value(operands[1]));
-                break;
+              break;
             default:
                 if (nextHandler != null) {
                     nextHandler.handle(command, cpu);
